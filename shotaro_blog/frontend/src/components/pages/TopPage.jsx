@@ -15,9 +15,9 @@ const TopPage = () => {
 
     useEffect(() => {
         axios
-        .get('http://localhost:8000/api/posts/')
-        .then(res=>{setPosts(res.data);})
-        .catch(err=>{console.log(err);});
+            .get('http://localhost:8000/api/posts/')
+            .then(res=>{setPosts(res.data);})
+            .catch(err=>{console.log(err);});
     },[]);
     return(
         <TopPageTemplate classes={classes.page} posts={posts}/>
