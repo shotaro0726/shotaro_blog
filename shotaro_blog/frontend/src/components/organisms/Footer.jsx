@@ -1,15 +1,7 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
-import {Typography} from '@material-ui/core';
-import {BLOG_TITLE} from '../constants';
+import Copyright from '../atoms/Copyright';
 
-function Copyright() {
-    return (
-      <Typography variant="body2" color="textSecondary" align="center">
-        {"Copyright ©"}{BLOG_TITLE}{''}{new Date().getFullYear()}{'.'}
-      </Typography>
-    );
-}
 
 const useStyles = makeStyles(theme => ({
     footer: {
